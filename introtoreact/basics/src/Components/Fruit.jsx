@@ -2,7 +2,12 @@ import React, {useState} from "react";
 function Fruit(){
     const [fruit, setfruit] = useState("apple");
     function changefruit(){
-        setfruit("mango")// sefruit = sefruit + 1
+        if(fruit=="apple"){
+            setfruit("mango");
+        }else{
+            setfruit("apple");
+        }
+        
     }
     return(
         <div>
